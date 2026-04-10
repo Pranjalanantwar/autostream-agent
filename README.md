@@ -1,42 +1,40 @@
-\# AutoStream Agent
+# AutoStream Agent – Social-to-Lead Workflow
 
+## Overview
+This project is a conversational AI agent built for a fictional SaaS product "AutoStream".
 
+It can:
+- Answer product queries
+- Provide pricing (using a knowledge base)
+- Detect high-intent users
+- Capture leads interactively
 
-\## What this does
+---
 
-This is a simple AI chatbot that:
+## Features
 
-\- Answers pricing questions
+### Intent Detection
+Detects:
+- Greetings
+- Pricing queries
+- Purchase intent
 
-\- Detects when user wants to buy
+### RAG (Retrieval-Augmented Generation)
+Uses a local JSON file (`knowledge.json`) to fetch pricing dynamically.
 
-\- Collects name, email, platform
+### Lead Capture
+Collects:
+- Name
+- Email (with validation)
+- Platform
 
-\- Uses a JSON file as knowledge (RAG)
+### Tool Execution
+Simulates saving lead data.
 
+---
 
+## How to Run
 
-\## How to run
-
+```bash
 python main.py
-
-
-
-\## Example
-
-User: hi  
-
-Agent: Hello  
-
-
-
-User: pricing  
-
-Agent: Shows plans  
-
-
-
-User: buy  
-
-Agent: Collects details
 
